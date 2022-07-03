@@ -134,10 +134,12 @@ address {
 }
 
 .nav__list-link {
+  font-family: "Raleway";
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  font-style: normal;
+  font-feature-settings: "pnum" on, "lnum" on;
   color: #094581;
 }/*# sourceMappingURL=main.css.map */
