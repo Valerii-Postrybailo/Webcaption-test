@@ -1,0 +1,94 @@
+
+.above-header-line{
+  padding-top:8px;
+  padding-bottom: 8px;
+
+  background-color: $main-color;
+
+  &__container{
+    display: flex;
+  }
+}
+
+.messengers-list{
+  display:flex;
+  margin-left:auto;
+
+  &__item:not(:last-child){
+      margin-right: 10px;
+    }
+
+  &__link{
+    display:flex ;
+  }
+
+  &__icon{
+    fill: #ffff;
+    &:hover{
+      fill: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.header {
+  padding-bottom: 200px;
+
+  background-color: $main-bg-color;
+}
+
+.classic-header-part{
+  display: flex;
+  align-items: center;
+}
+
+.nav{
+  margin-left: 419px;
+  margin-right: 52px;
+}
+
+.nav__list{
+  display: flex;
+}
+
+.nav__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: red;
+}
+
+.tel-list{
+  display:flex;
+  margin-left: auto;
+
+  &__link{
+    font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #094581;
+
+  }
+}
+
+.nav__list-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #094581;
+
+}

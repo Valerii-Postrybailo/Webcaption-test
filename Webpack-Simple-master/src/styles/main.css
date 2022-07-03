@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body {
+  font-family: "Raleway", "Open Sans", sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    min-width: 300px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .container {
+    width: 1350px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+  font-style: normal;
+  /* or */
+  font-style: inherit;
+}
+
+.above-header-line {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #094581;
+}
+.above-header-line__container {
+  display: flex;
+}
+
+.messengers-list {
+  display: flex;
+  margin-left: auto;
+}
+.messengers-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.messengers-list__link {
+  display: flex;
+}
+.messengers-list__icon {
+  fill: white;
+}
+.messengers-list__icon:hover {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.header {
+  padding-bottom: 200px;
+  background-color: #F1F7FE;
+}
+
+.classic-header-part {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-left: 419px;
+  margin-right: 52px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: red;
+}
+
+.tel-list {
+  display: flex;
+  margin-left: auto;
+}
+.tel-list__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #094581;
+}
+
+.nav__list-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #094581;
+}/*# sourceMappingURL=main.css.map */
