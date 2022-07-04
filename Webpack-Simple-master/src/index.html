@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css" />
 </head>
 
     <body>
@@ -61,9 +62,18 @@
             <div class="container">
                 <div class="classic-header-part">
                 
-                    <a href="">
+                    <a class="header-logo" href="">
                         <img src="./images/logo/header-logo.png" alt="Лого сайту">
                     </a>
+
+                    <button type="button" class="menu-open-btn">
+                    
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню ">
+                            <use class="menu-button__burger-menu"
+                                href="images/hero-img-and-svg/optimized-symbol-defs.svg#mobile-burger-menu">
+                            </use>
+                        </svg>
+                    </button>
                 
                     <nav class="nav">
                         <ul class="nav__list">
@@ -93,42 +103,42 @@
                 
                     <ul class="tel-list">
                         <li>
-                            <a  class="tel-list__link" href="#">+38 063 291-39-11 / +38 097 928-85-57 </a>
+                            <a  class="tel-list__link" href="tel:+38 063 291-39-11">+38 063 291-39-11 /</a>
                         </li>
                 
-                        <!-- <li>
+                        <li>
                             <a class="tel-list__link" href="tel:+38 097 928-85-57">+38 097 928-85-57</a>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
                 
                 <div class="hero-part">
-                    <div>
-                        <h1>ХІМЧИСТКА — ПРАЛЬНЯ AKSI</h1>
-                        <p>Чистка одягу, прання білизни, весільних суконь, подушок всього за декілька кліків. Новий підхід у догляді за
+                    <div class="hero-main-info">
+                        <h1 class="hero-main-info__title">ХІМЧИСТКА — ПРАЛЬНЯ AKSI</h1>
+                        <p class="hero-main-info__text">Чистка одягу, прання білизни, весільних суконь, подушок всього за декілька кліків. Новий підхід у догляді за
                             вашими речами, ми використовуємо сучасне німецьке обладнання та препарати.</p>
-                        <button type="button">ЗАМОВИТИ</button>
+                        <button class="hero-main-info__button" type="button">ЗАМОВИТИ</button>
                     </div>
                 
-                    <div class="hero-picture">
-                        <div>
+                    
+                        <div class="hero-picture__first">
                             <picture>
                                 <img src="./images/header/first-img.png">
                             </picture>
                         </div>
                 
-                        <div>
+                        <div  class="hero-picture__second">
                             <picture>
                                 <img src="./images/header/second-img.png">
                             </picture>
                         </div>
                 
-                        <div>
+                        <div  class="hero-picture__round">
                             <picture>
                                 <img src="./images/header/round.png">
                             </picture>
                         </div>
-                    </div>
+                    
                 </div>
             </div>
             
