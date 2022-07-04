@@ -10,7 +10,7 @@ body {
 }
 @media screen and (min-width: 320px) {
   .container {
-    min-width: 300px;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -154,8 +154,13 @@ address {
 }
 
 .tel-list {
-  display: flex;
-  margin-left: 52px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .tel-list {
+    display: flex;
+    margin-left: 52px;
+  }
 }
 .tel-list__link {
   font-weight: 700;
@@ -235,8 +240,14 @@ address {
 .hero-picture__second {
   position: absolute;
   z-index: 1;
+  display: none;
   left: 550px;
   top: -60px;
+}
+@media screen and (min-width: 768px) {
+  .hero-picture__second {
+    display: block;
+  }
 }
 @media screen and (min-width: 1350px) {
   .hero-picture__second {
@@ -255,4 +266,21 @@ address {
     left: 730px;
     top: -142px;
   }
+}
+
+.menu-open-btn {
+  display: block;
+  display: flex;
+  padding: 0;
+  margin-left: 27px;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 1350px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+.menu-open-btn__burger-menu {
+  fill: #094581;
 }/*# sourceMappingURL=main.css.map */

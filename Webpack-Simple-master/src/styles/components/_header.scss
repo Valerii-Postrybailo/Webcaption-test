@@ -49,6 +49,8 @@
 .classic-header-part{
   position: absolute;
   top: 30px;
+
+
   
   display: flex;
   align-items: center;
@@ -104,8 +106,12 @@
 }
 
 .tel-list{
-  display:flex;
-  margin-left: 52px;
+  display: none;
+  @media screen and (min-width:768px){
+    display: flex;
+    margin-left: 52px;
+  }
+  
 
   &__link{
   font-weight: 700;
@@ -209,10 +215,16 @@
     position: absolute;
     z-index: 1;
 
+    display: none;
+
     left: 550px;
     top: -60px;
+
+  @media screen and (min-width:768px){
+    display: block;
+  }
+
   @media screen and (min-width:1350px){
-  
       top: -60px;
       left: 1085px;
   }
@@ -230,4 +242,24 @@
   }
 
   
+}
+
+
+.menu-open-btn{
+  display: block;
+  display: flex;
+  padding: 0;
+  margin-left: 27px;
+
+  border: none;
+
+  background-color: transparent;
+
+  @media screen and (min-width:1350px){
+    display: none;
+  }
+
+  &__burger-menu{
+  fill: #094581;
+  }
 }
