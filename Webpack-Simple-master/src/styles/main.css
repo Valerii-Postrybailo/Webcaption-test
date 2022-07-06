@@ -65,11 +65,30 @@ address {
   font-style: inherit;
 }
 
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
 .header {
   position: relative;
-  padding-top: 300px;
-  padding-bottom: 310px;
+  padding-top: 150px;
+  padding-bottom: 160px;
   background-color: #F1F7FE;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 200px;
+    padding-bottom: 210px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .header {
+    padding-top: 300px;
+    padding-bottom: 310px;
+  }
 }
 
 .above-header-line {
@@ -108,6 +127,7 @@ address {
   top: 30px;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .classic-header-part {
@@ -129,13 +149,21 @@ address {
     margin-right: 52px;
   }
 }
-
 .nav__list {
   display: flex;
 }
-
 .nav__list-item:not(:last-child) {
   margin-right: 30px;
+}
+.nav__list-link {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #094581;
 }
 
 .language-button {
@@ -171,19 +199,16 @@ address {
   color: #094581;
 }
 
-.nav__list-link {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: #094581;
-}
-
 .hero-main-info {
-  width: 545px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero-main-info {
+    width: 545px;
+  }
 }
 .hero-main-info__title {
   margin-bottom: 20px;
@@ -197,10 +222,8 @@ address {
   margin-bottom: 30px;
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  /* or 167% */
   color: #333333;
 }
 .hero-main-info__button {
@@ -208,7 +231,6 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height, or 125% */
   text-align: center;
   text-transform: uppercase;
   color: #094581;
@@ -283,4 +305,101 @@ address {
 }
 .menu-open-btn__burger-menu {
   fill: #094581;
+}
+
+.services {
+  padding-top: 81px;
+  padding-bottom: 81px;
+}
+
+.services__title {
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #094581;
+}
+
+.search-form {
+  position: relative;
+  margin: 0 auto 30px;
+  width: 300px;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .search-form {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .search-form {
+    width: 890px;
+  }
+}
+.search-form::after {
+  content: " ";
+  background-image: url(/Webpack-Simple-master/src/images/icons/search.svg);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 30px;
+  top: 18px;
+}
+.search-form__input {
+  padding: 19px 30px 19px 30px;
+  width: 100%;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  background: #F1F7FE;
+  border-radius: 30px;
+  border: none;
+  outline: 0;
+}
+
+.upload-price {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.upload-price__item {
+  position: relative;
+}
+.upload-price__item:not(:last-child) {
+  margin-right: 110px;
+}
+.upload-price__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #094581;
+}
+
+.services-cards {
+  display: flex;
+  grid-gap: 30px;
+}
+
+.services-card {
+  padding: 62px 30px 68px 30px;
+  width: 430px;
+  border: 1px solid #E1EFFD;
+  border-radius: 30px;
+  background: #FFFFFF;
+}
+.services-card__title {
+  margin-bottom: 52px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #094581;
+}
+.services-card__text {
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
 }/*# sourceMappingURL=main.css.map */
